@@ -1,0 +1,113 @@
+/*Valores por defecto*/
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+h1 {
+    color: rgb(41, 41, 248);
+    font-size: 64px;
+}
+
+h2 {}
+
+section {
+    box-sizing: border-box;
+    display: flex;
+}
+
+
+/*Cabecera-Header*/
+
+header {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+header h1 {
+    padding-left: 30px;
+}
+
+header>img {
+    height: 100%;
+}
+
+
+/*Articulos*/
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+article img {
+    max-width: 320px;
+    border: solid 4px rgba(27, 175, 39, 0.6);
+    float: right;
+}
+
+article img:hover {
+    background-color: black;
+    box-shadow: 3px 10px 14px 3px grey;
+}
+
+article h2 {
+    padding-bottom: 20px;
+    float: left;
+    width: 100%;
+}
+
+article,
+p {
+    max-width: 320px;
+    color: rgb(61, 110, 200);
+}
+
+
+/*MEDIAQUERYS*/
+
+@media (max-width: 1050px) {
+    header {
+        flex-wrap: wrap;
+    }
+    section {
+        flex-wrap: wrap;
+    }
+    article {
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 600px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    header {
+        margin: 0 auto;
+        padding: 0 auto;
+        justify-content: space-around;
+    }
+    header h1 {
+        padding: 0px;
+    }
+}
+
+@media (max-width: 515px) {
+    header h1 {
+        font-size: 50px;
+    }
+}

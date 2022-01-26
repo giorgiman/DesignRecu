@@ -1,0 +1,176 @@
+/*Valores por defecto*/
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(198, 102, 102);
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+section {
+    box-sizing: border-box;
+    display: flex;
+}
+
+
+/*Cabecera-Header*/
+
+header {
+    background-color: rgb(198, 102, 102);
+    display: flex;
+    align-items: center;
+    height: 200px;
+    margin-bottom: 50px;
+}
+
+header span {
+    font-size: 48px;
+    font-weight: 550;
+    color: white;
+}
+
+header>img {
+    padding: 35px;
+    width: 100px;
+}
+
+
+/*Articulos*/
+
+section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 400px;
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+article img {
+    max-width: 420px;
+    float: right;
+}
+
+article img:hover {
+    background-color: black;
+    box-shadow: 4px 3px 10px 4px brown;
+}
+
+article h2 {
+    float: left;
+    width: 100%;
+    font-size: 36px;
+}
+
+article {
+    max-width: 420px;
+}
+
+.main-texto {
+    display: flex;
+    justify-content: space-between;
+    width: 420px;
+}
+
+.main-texto p {
+    text-align: left;
+    width: 266px;
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+.main-texto span {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+
+/*FOOTER*/
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-end;
+    text-align: center;
+    background-color: rgb(217, 159, 159);
+    margin-top: 222px;
+    padding: 0;
+    clear: both;
+}
+
+footer h3 {
+    width: 100%;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 24px;
+}
+
+.redes {
+    background-color: rgb(217, 159, 159);
+    width: 100%;
+}
+
+.redes img {
+    width: 4%;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.redes img:hover {
+    background-color: pink;
+    border-radius: 20px;
+}
+
+
+/*MEDIAQUERYS*/
+
+@media (max-width: 1350px) {
+    header {
+        flex-wrap: wrap;
+    }
+    section {
+        flex-wrap: wrap;
+        width: 100%;
+        margin-bottom: 0px;
+    }
+    article {
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 800px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 1200) {
+    article {
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 800px) {
+    header {
+        margin: 0 auto;
+        margin-bottom: 50px;
+        padding: 0px;
+        justify-content: center;
+    }
+    header img {
+        padding: 0px 10px 0px 0px;
+    }
+}
+
+@media (max-width: 515px) {
+    header span {
+        font-size: 45px;
+    }
+}
